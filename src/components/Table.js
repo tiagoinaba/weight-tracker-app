@@ -31,7 +31,7 @@ export default function Table({ weightArr, isAverage = false }) {
                 if(reversedArr.length < 7) {
                     const firstIndex = 0
                     const lastIndex = (reversedArr.length) - 1
-                    const weightsOnly = reversedArr.slice(firstIndex, lastIndex).map(entry => entry.weightInKg)
+                    const weightsOnly = reversedArr.slice(firstIndex, lastIndex +1).map(entry => entry.weightInKg)
                     tempArr.push((
                         <tr key={reversedArr[firstIndex].date}>
                             <td>{`${reversedArr[firstIndex].date} - ${reversedArr[lastIndex].date}`}</td>
