@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+
+  .title {
+    font-size: 3rem;
+    color: #E9C46A;
+  }
+
+  p {
+    color: #F4A261;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+}
+
+.break {
+  width: 60%;
+  border: none;
+  border-bottom: 1px solid #2A9D8F;
+  margin: 2rem 0;
+}
+
+.myForm {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.suffix {
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  color: #2A9D8F;
+  padding-left: 8px;
+  font-family: Inter;
+  font-size: 30px;
+  pointer-events: none;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.weightInput {
+  background-color: transparent;  
+  border: none;
+  font-size: 30px;
+  font-family: Inter;
+  padding: .5rem;
+  color: #2A9D8F;
+  border-bottom: 1px solid #2A9D8F;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  margin-left: 1rem;
+  font-family: Inter;
+  color: white;
+  background-color: #2A9D8F;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.37);
+  cursor: pointer;
+  backface-visibility: hidden;
+  transition: all .2s;
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.466);
+  }
+}
+
+.tableContainer {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  th {
+    padding: 6px 20px;
+    background-color: #22066e;
+    color: rgb(224, 223, 216);
+  }
+
+  table, th, td {
+    border: 1px solid #2A9D8F;
+  }
+
+  td {
+    padding: .4rem;
+    color: #ffffff;
+  }
+}
+
+.chartContainer {
+  width: 900px;
+}
+
+@media (max-width: 600px) {
+  .chartContainer {
+    width: 400px;
+  }
+}
