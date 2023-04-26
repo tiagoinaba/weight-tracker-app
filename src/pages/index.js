@@ -35,7 +35,7 @@ export default function Home() {
     labels: [...weightArr.map(item => item.date)],
     datasets: [
       {
-        data: [...weightArr.map(item => item.weightInKg)],
+        data: [...weightArr.map(item => item.weightInKg).reverse()],
         backgroundColor: 'aqua',
         borderColor: 'black',
         pointBorderColor: 'aqua',
